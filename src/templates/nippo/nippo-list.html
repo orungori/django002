@@ -1,0 +1,11 @@
+{% extends "nippo/base.html" %}
+{% block title %}日報アプリ一覧{% endblock %}
+{% block content %}
+<h1>
+    {% for obj in model %}
+    <p>
+        {{obj.title}}
+    </p>
+    {% endfor %}
+</h1>
+{% endblock %}
